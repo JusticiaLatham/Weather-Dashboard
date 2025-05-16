@@ -9,7 +9,7 @@ A modern weather dashboard built with React, TypeScript, and Material-UI that al
 - Responsive design for all devices
 
 ## Live Demo
-[View Live App](https://justicialatham.github.io/Weather-Dashboard)
+The app is live at: [https://justicialatham.github.io/Weather-Dashboard](https://justicialatham.github.io/Weather-Dashboard)
 
 ## Features
 
@@ -52,7 +52,12 @@ A modern weather dashboard built with React, TypeScript, and Material-UI that al
    npm start
    ```
 
-   The app will run on http://localhost:3001
+   The development server will run on http://localhost:3001
+
+## Accessing the App
+
+- **Development**: When running locally, access the app at `http://localhost:3001`
+- **Production**: The live version is at [https://justicialatham.github.io/Weather-Dashboard](https://justicialatham.github.io/Weather-Dashboard)
 
 ## Environment Variables
 
