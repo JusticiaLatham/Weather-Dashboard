@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# Weather Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern weather dashboard built with React, TypeScript, and Material-UI that allows users to:
+- Search for cities with autocomplete
+- View current weather conditions
+- See 5-day weather forecast
+- Toggle between Celsius and Fahrenheit
+- Save favorite locations
+- Responsive design for all devices
 
-## Available Scripts
+## Live Demo
+[Add your deployed app URL here]
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **City Search**: Autocomplete search functionality using OpenWeather's Geocoding API
+- **Current Weather**: Displays temperature, weather conditions, humidity, and wind speed
+- **5-Day Forecast**: Shows weather forecast with daily temperatures and conditions
+- **Unit Toggle**: Switch between Celsius and Fahrenheit
+- **Favorites**: Save and manage favorite locations with persistent storage
+- **Responsive Design**: Built with Material-UI for a modern, mobile-friendly interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React 18
+- TypeScript
+- Material-UI v5
+- OpenWeather API
+- Axios for API requests
+- Local Storage for favorites persistence
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone [your-repo-url]
+   cd weather-dashboard
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Create a `.env` file in the root directory and add your OpenWeather API key:
+   ```
+   REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   The app will run on http://localhost:3001
 
-### `npm run eject`
+## Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `REACT_APP_OPENWEATHER_API_KEY`: Your OpenWeather API key (required)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+src/
+├── components/          # React components
+│   ├── SearchLocation.tsx
+│   ├── CurrentWeather.tsx
+│   ├── Forecast.tsx
+│   ├── FavoritesList.tsx
+│   └── UnitToggle.tsx
+├── hooks/              # Custom React hooks
+│   ├── useUnits.ts
+│   └── useFavorites.ts
+├── services/          # API services
+│   └── weatherService.ts
+├── types/            # TypeScript types
+│   └── weather.ts
+└── App.tsx          # Main application component
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## API Usage
 
-## Learn More
+The application uses the following OpenWeather API endpoints:
+- Geocoding API for city search
+- Current Weather API for current conditions
+- 5 Day / 3 Hour Forecast API for forecast data
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+[Add your license here]
+
+## Acknowledgments
+
+- OpenWeather API for weather data
+- Material-UI for the component library
+- Create React App for the project bootstrap
