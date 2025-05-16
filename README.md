@@ -9,7 +9,7 @@ A modern weather dashboard built with React, TypeScript, and Material-UI that al
 - Responsive design for all devices
 
 ## Live Demo
-[Add your deployed app URL here]
+[View Live App](https://justicialatham.github.io/Weather-Dashboard)
 
 ## Features
 
@@ -33,7 +33,7 @@ A modern weather dashboard built with React, TypeScript, and Material-UI that al
 
 1. Clone the repository:
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/JusticiaLatham/Weather-Dashboard.git
    cd weather-dashboard
    ```
 
@@ -44,7 +44,7 @@ A modern weather dashboard built with React, TypeScript, and Material-UI that al
 
 3. Create a `.env` file in the root directory and add your OpenWeather API key:
    ```
-   REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
+   REACT_APP_OPENWEATHER_API_KEY=17f2334fce210e594a33c13256f3e40c
    ```
 
 4. Start the development server:
@@ -56,7 +56,7 @@ A modern weather dashboard built with React, TypeScript, and Material-UI that al
 
 ## Environment Variables
 
-- `REACT_APP_OPENWEATHER_API_KEY`: Your OpenWeather API key (required)
+- `REACT_APP_OPENWEATHER_API_KEY`: OpenWeather API key (already set up in the live demo)
 
 ## Project Structure
 
@@ -93,9 +93,19 @@ The application uses the following OpenWeather API endpoints:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Deployment
+
+The app is deployed using GitHub Pages. To deploy new changes:
+
+```bash
+npm run deploy
+```
+
+This will build the app and deploy it to GitHub Pages automatically.
+
 ## License
 
-[Add your license here]
+MIT License - feel free to use this project for your own learning or as a base for your weather dashboard.
 
 ## Acknowledgments
 
